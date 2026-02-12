@@ -1,0 +1,508 @@
+{
+  "finishes": [
+    {
+      "id": "amani_grey",
+      "label": "Amani Grey",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/amani_grey/preview.webp",
+      "samplePreview": "/assets/images/top-color/amani_grey/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/amani_grey/base_color.webp",
+        "mdf": "/assets/images/top-color/amani_grey/mdf_color.webp",
+        "normal": "/assets/images/top-color/amani_grey/normal.webp",
+        "roughness": "/assets/images/top-color/amani_grey/roughness.webp",
+        "metalness": "/assets/images/top-color/amani_grey/metalness.webp"
+      }
+    },
+    {
+      "id": "anatolia",
+      "label": "Anatolia",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/anatolia/preview.webp",
+      "samplePreview": "/assets/images/top-color/anatolia/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/anatolia/base_color.webp",
+        "mdf": "/assets/images/top-color/anatolia/mdf_color.webp",
+        "normal": "/assets/images/top-color/anatolia/normal.webp",
+        "roughness": "/assets/images/top-color/anatolia/roughness.webp",
+        "metalness": "/assets/images/top-color/anatolia/metalness.webp"
+      }
+    },
+    {
+      "id": "aristocrat",
+      "label": "Aristocrat",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/aristocrat/preview.webp",
+      "samplePreview": "/assets/images/top-color/aristocrat/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/aristocrat/base_color.webp",
+        "mdf": "/assets/images/top-color/aristocrat/mdf_color.webp",
+        "normal": "/assets/images/top-color/aristocrat/normal.webp",
+        "roughness": "/assets/images/top-color/aristocrat/roughness.webp",
+        "metalness": "/assets/images/top-color/aristocrat/metalness.webp"
+      }
+    },
+    {
+      "id": "autumn_bronze",
+      "label": "Autumn Bronze",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/autumn_bronze/preview.jpg",
+      "samplePreview": "/assets/images/top-color/autumn_bronze/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/autumn_bronze/base_color.webp",
+        "mdf": "/assets/images/top-color/autumn_bronze/mdf_color.webp",
+        "normal": "/assets/images/top-color/autumn_bronze/normal.webp",
+        "roughness": "/assets/images/top-color/autumn_bronze/roughness.webp",
+        "metalness": "/assets/images/top-color/autumn_bronze/metalness.webp"
+      }
+    },
+    {
+      "id": "calacatta_black",
+      "label": "Calacatta Black",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/calacatta_black/preview.webp",
+      "samplePreview": "/assets/images/top-color/calacatta_black/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/calacatta_black/base_color.webp",
+        "mdf": "/assets/images/top-color/calacatta_black/mdf_color.webp",
+        "normal": "/assets/images/top-color/calacatta_black/normal.webp",
+        "roughness": "/assets/images/top-color/calacatta_black/roughness.webp",
+        "metalness": "/assets/images/top-color/calacatta_black/metalness.webp"
+      }
+    },
+    {
+      "id": "calacatta_lux",
+      "label": "Calacatta Lux",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/calacatta_lux/preview.webp",
+      "samplePreview": "/assets/images/top-color/calacatta_lux/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/calacatta_lux/base_color.webp",
+        "mdf": "/assets/images/top-color/calacatta_lux/mdf_color.webp",
+        "normal": "/assets/images/top-color/calacatta_lux/normal.webp",
+        "roughness": "/assets/images/top-color/calacatta_lux/roughness.webp",
+        "metalness": "/assets/images/top-color/calacatta_lux/metalness.webp"
+      }
+    },
+    {
+      "id": "cartier_gold",
+      "label": "Cartier Gold",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/cartier_gold/preview.webp",
+      "samplePreview": "/assets/images/top-color/cartier_gold/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/cartier_gold/base_color.webp",
+        "mdf": "/assets/images/top-color/cartier_gold/mdf_color.webp",
+        "normal": "/assets/images/top-color/cartier_gold/normal.webp",
+        "roughness": "/assets/images/top-color/cartier_gold/roughness.webp",
+        "metalness": "/assets/images/top-color/cartier_gold/metalness.webp"
+      }
+    },
+    {
+      "id": "desert_dune",
+      "label": "Desert Dune",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/desert_dune/preview.webp",
+      "samplePreview": "/assets/images/top-color/desert_dune/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/desert_dune/base_color.webp",
+        "mdf": "/assets/images/top-color/desert_dune/mdf_color.webp",
+        "normal": "/assets/images/top-color/desert_dune/normal.webp",
+        "roughness": "/assets/images/top-color/desert_dune/roughness.webp",
+        "metalness": "/assets/images/top-color/desert_dune/metalness.webp"
+      }
+    },
+    {
+      "id": "elegance",
+      "label": "Elegance",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/elegance/preview.webp",
+      "samplePreview": "/assets/images/top-color/elegance/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/elegance/base_color.webp",
+        "mdf": "/assets/images/top-color/elegance/mdf_color.webp",
+        "normal": "/assets/images/top-color/elegance/normal.webp",
+        "roughness": "/assets/images/top-color/elegance/roughness.webp",
+        "metalness": "/assets/images/top-color/elegance/metalness.webp"
+      }
+    },
+    {
+      "id": "fior",
+      "label": "Fior",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/fior/preview.webp",
+      "samplePreview": "/assets/images/top-color/fior/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/fior/base_color.webp",
+        "mdf": "/assets/images/top-color/fior/mdf_color.webp",
+        "normal": "/assets/images/top-color/fior/normal.webp",
+        "roughness": "/assets/images/top-color/fior/roughness.webp",
+        "metalness": "/assets/images/top-color/fior/metalness.webp"
+      }
+    },
+    {
+      "id": "gold_onyx",
+      "label": "Gold Onyx",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/gold_onyx/preview.webp",
+      "samplePreview": "/assets/images/top-color/gold_onyx/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/gold_onyx/base_color.webp",
+        "mdf": "/assets/images/top-color/gold_onyx/mdf_color.webp",
+        "normal": "/assets/images/top-color/gold_onyx/normal.webp",
+        "roughness": "/assets/images/top-color/gold_onyx/roughness.webp",
+        "metalness": "/assets/images/top-color/gold_onyx/metalness.webp"
+      }
+    },
+    {
+      "id": "ivory",
+      "label": "Ivory",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/ivory/preview.jpg",
+      "samplePreview": "/assets/images/top-color/ivory/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/ivory/base_color.webp",
+        "mdf": "/assets/images/top-color/ivory/mdf_color.webp",
+        "normal": "/assets/images/top-color/ivory/normal.webp",
+        "roughness": "/assets/images/top-color/ivory/roughness.webp",
+        "metalness": "/assets/images/top-color/ivory/metalness.webp"
+      }
+    },
+    {
+      "id": "kenya",
+      "label": "Kenya",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/kenya/preview.jpg",
+      "samplePreview": "/assets/images/top-color/kenya/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/kenya/base_color.webp",
+        "mdf": "/assets/images/top-color/kenya/mdf_color.webp",
+        "normal": "/assets/images/top-color/kenya/normal.webp",
+        "roughness": "/assets/images/top-color/kenya/roughness.webp",
+        "metalness": "/assets/images/top-color/kenya/metalness.webp"
+      }
+    },
+    {
+      "id": "lucid",
+      "label": "Lucid",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/lucid/preview.webp",
+      "samplePreview": "/assets/images/top-color/lucid/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/lucid/base_color.webp",
+        "mdf": "/assets/images/top-color/lucid/mdf_color.webp",
+        "normal": "/assets/images/top-color/lucid/normal.webp",
+        "roughness": "/assets/images/top-color/lucid/roughness.webp",
+        "metalness": "/assets/images/top-color/lucid/metalness.webp"
+      }
+    },
+    {
+      "id": "magma",
+      "label": "Magma",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/magma/preview.webp",
+      "samplePreview": "/assets/images/top-color/magma/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/magma/base_color.webp",
+        "mdf": "/assets/images/top-color/magma/mdf_color.webp",
+        "normal": "/assets/images/top-color/magma/normal.webp",
+        "roughness": "/assets/images/top-color/magma/roughness.webp",
+        "metalness": "/assets/images/top-color/magma/metalness.webp"
+      }
+    },
+    {
+      "id": "mont_blanc_texture",
+      "label": "Mont Blanc Texture",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/mont_blanc_texture/preview.webp",
+      "samplePreview": "/assets/images/top-color/mont_blanc_texture/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/mont_blanc_texture/base_color.webp",
+        "mdf": "/assets/images/top-color/mont_blanc_texture/mdf_color.webp",
+        "normal": "/assets/images/top-color/mont_blanc_texture/normal.webp",
+        "roughness": "/assets/images/top-color/mont_blanc_texture/roughness.webp",
+        "metalness": "/assets/images/top-color/mont_blanc_texture/metalness.webp"
+      }
+    },
+    {
+      "id": "moss_blanc",
+      "label": "Moss Blanc",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/moss_blanc/preview.webp",
+      "samplePreview": "/assets/images/top-color/moss_blanc/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/moss_blanc/base_color.webp",
+        "mdf": "/assets/images/top-color/moss_blanc/mdf_color.webp",
+        "normal": "/assets/images/top-color/moss_blanc/normal.webp",
+        "roughness": "/assets/images/top-color/moss_blanc/roughness.webp",
+        "metalness": "/assets/images/top-color/moss_blanc/metalness.webp"
+      }
+    },
+    {
+      "id": "mother_earth",
+      "label": "Mother Earth",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/mother_earth/preview.webp",
+      "samplePreview": "/assets/images/top-color/mother_earth/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/mother_earth/base_color.webp",
+        "mdf": "/assets/images/top-color/mother_earth/mdf_color.webp",
+        "normal": "/assets/images/top-color/mother_earth/normal.webp",
+        "roughness": "/assets/images/top-color/mother_earth/roughness.webp",
+        "metalness": "/assets/images/top-color/mother_earth/metalness.webp"
+      }
+    },
+    {
+      "id": "noce",
+      "label": "Noce",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/noce/preview.webp",
+      "samplePreview": "/assets/images/top-color/noce/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/noce/base_color.webp",
+        "mdf": "/assets/images/top-color/noce/mdf_color.webp",
+        "normal": "/assets/images/top-color/noce/normal.webp",
+        "roughness": "/assets/images/top-color/noce/roughness.webp",
+        "metalness": "/assets/images/top-color/noce/metalness.webp"
+      }
+    },
+    {
+      "id": "orova",
+      "label": "Orova",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/orova/preview.webp",
+      "samplePreview": "/assets/images/top-color/orova/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/orova/base_color.webp",
+        "mdf": "/assets/images/top-color/orova/mdf_color.webp",
+        "normal": "/assets/images/top-color/orova/normal.webp",
+        "roughness": "/assets/images/top-color/orova/roughness.webp",
+        "metalness": "/assets/images/top-color/orova/metalness.webp"
+      }
+    },
+    {
+      "id": "pearl_mist",
+      "label": "Pearl Mist",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/pearl_mist/preview.webp",
+      "samplePreview": "/assets/images/top-color/pearl_mist/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/pearl_mist/base_color.webp",
+        "mdf": "/assets/images/top-color/pearl_mist/mdf_color.webp",
+        "normal": "/assets/images/top-color/pearl_mist/normal.webp",
+        "roughness": "/assets/images/top-color/pearl_mist/roughness.webp",
+        "metalness": "/assets/images/top-color/pearl_mist/metalness.webp"
+      }
+    },
+    {
+      "id": "pietra_stone",
+      "label": "Pietra Stone",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/pietra_stone/preview.webp",
+      "samplePreview": "/assets/images/top-color/pietra_stone/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/pietra_stone/base_color.webp",
+        "mdf": "/assets/images/top-color/pietra_stone/mdf_color.webp",
+        "normal": "/assets/images/top-color/pietra_stone/normal.webp",
+        "roughness": "/assets/images/top-color/pietra_stone/roughness.webp",
+        "metalness": "/assets/images/top-color/pietra_stone/metalness.webp"
+      }
+    },
+    {
+      "id": "premium_gold",
+      "label": "Premium Gold",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/premium_gold/preview.webp",
+      "samplePreview": "/assets/images/top-color/premium_gold/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/premium_gold/base_color.webp",
+        "mdf": "/assets/images/top-color/premium_gold/mdf_color.webp",
+        "normal": "/assets/images/top-color/premium_gold/normal.webp",
+        "roughness": "/assets/images/top-color/premium_gold/roughness.webp",
+        "metalness": "/assets/images/top-color/premium_gold/metalness.webp"
+      }
+    },
+    {
+      "id": "roman",
+      "label": "Roman",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/roman/preview.webp",
+      "samplePreview": "/assets/images/top-color/roman/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/roman/base_color.webp",
+        "mdf": "/assets/images/top-color/roman/mdf_color.webp",
+        "normal": "/assets/images/top-color/roman/normal.webp",
+        "roughness": "/assets/images/top-color/roman/roughness.webp",
+        "metalness": "/assets/images/top-color/roman/metalness.webp"
+      }
+    },
+    {
+      "id": "shadow_white",
+      "label": "Shadow White",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/shadow_white/preview.webp",
+      "samplePreview": "/assets/images/top-color/shadow_white/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/shadow_white/base_color.webp",
+        "mdf": "/assets/images/top-color/shadow_white/mdf_color.webp",
+        "normal": "/assets/images/top-color/shadow_white/normal.webp",
+        "roughness": "/assets/images/top-color/shadow_white/roughness.webp",
+        "metalness": "/assets/images/top-color/shadow_white/metalness.webp"
+      }
+    },
+    {
+      "id": "sienna_bronze",
+      "label": "Sienna Bronze",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/sienna_bronze/preview.webp",
+      "samplePreview": "/assets/images/top-color/sienna_bronze/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/sienna_bronze/base_color.webp",
+        "mdf": "/assets/images/top-color/sienna_bronze/mdf_color.webp",
+        "normal": "/assets/images/top-color/sienna_bronze/normal.webp",
+        "roughness": "/assets/images/top-color/sienna_bronze/roughness.webp",
+        "metalness": "/assets/images/top-color/sienna_bronze/metalness.webp"
+      }
+    },
+    {
+      "id": "skye",
+      "label": "Skye",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/skye/preview.jpg",
+      "samplePreview": "/assets/images/top-color/skye/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/skye/base_color.webp",
+        "mdf": "/assets/images/top-color/skye/mdf_color.webp",
+        "normal": "/assets/images/top-color/skye/normal.webp",
+        "roughness": "/assets/images/top-color/skye/roughness.webp",
+        "metalness": "/assets/images/top-color/skye/metalness.webp"
+      }
+    },
+    {
+      "id": "storm",
+      "label": "Storm",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/storm/preview.webp",
+      "samplePreview": "/assets/images/top-color/storm/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/storm/base_color.webp",
+        "mdf": "/assets/images/top-color/storm/mdf_color.webp",
+        "normal": "/assets/images/top-color/storm/normal.webp",
+        "roughness": "/assets/images/top-color/storm/roughness.webp",
+        "metalness": "/assets/images/top-color/storm/metalness.webp"
+      }
+    },
+    {
+      "id": "taj_mahal",
+      "label": "Taj Mahal",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/taj_mahal/preview.webp",
+      "samplePreview": "/assets/images/top-color/taj_mahal/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/taj_mahal/base_color.webp",
+        "mdf": "/assets/images/top-color/taj_mahal/mdf_color.webp",
+        "normal": "/assets/images/top-color/taj_mahal/normal.webp",
+        "roughness": "/assets/images/top-color/taj_mahal/roughness.webp",
+        "metalness": "/assets/images/top-color/taj_mahal/metalness.webp"
+      }
+    },
+    {
+      "id": "twilight",
+      "label": "Twilight",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/twilight/preview.jpg",
+      "samplePreview": "/assets/images/top-color/twilight/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/twilight/base_color.webp",
+        "mdf": "/assets/images/top-color/twilight/mdf_color.webp",
+        "normal": "/assets/images/top-color/twilight/normal.webp",
+        "roughness": "/assets/images/top-color/twilight/roughness.webp",
+        "metalness": "/assets/images/top-color/twilight/metalness.webp"
+      }
+    },
+    {
+      "id": "velvet",
+      "label": "Velvet",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/velvet/preview.webp",
+      "samplePreview": "/assets/images/top-color/velvet/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/velvet/base_color.webp",
+        "mdf": "/assets/images/top-color/velvet/mdf_color.webp",
+        "normal": "/assets/images/top-color/velvet/normal.webp",
+        "roughness": "/assets/images/top-color/velvet/roughness.webp",
+        "metalness": "/assets/images/top-color/velvet/metalness.webp"
+      }
+    },
+    {
+      "id": "velvet_black",
+      "label": "Velvet Black",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/velvet_black/preview.webp",
+      "samplePreview": "/assets/images/top-color/velvet_black/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/velvet_black/base_color.webp",
+        "mdf": "/assets/images/top-color/velvet_black/mdf_color.webp",
+        "normal": "/assets/images/top-color/velvet_black/normal.webp",
+        "roughness": "/assets/images/top-color/velvet_black/roughness.webp",
+        "metalness": "/assets/images/top-color/velvet_black/metalness.webp"
+      }
+    },
+    {
+      "id": "veneto",
+      "label": "Veneto",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/veneto/preview.webp",
+      "samplePreview": "/assets/images/top-color/veneto/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/veneto/base_color.webp",
+        "mdf": "/assets/images/top-color/veneto/mdf_color.webp",
+        "normal": "/assets/images/top-color/veneto/normal.webp",
+        "roughness": "/assets/images/top-color/veneto/roughness.webp",
+        "metalness": "/assets/images/top-color/veneto/metalness.webp"
+      }
+    },
+    {
+      "id": "venus_vein",
+      "label": "Venus Vein",
+      "finishType": "polish",
+      "preview": "/assets/images/top-color/venus_vein/preview.webp",
+      "samplePreview": "/assets/images/top-color/venus_vein/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/venus_vein/base_color.webp",
+        "mdf": "/assets/images/top-color/venus_vein/mdf_color.webp",
+        "normal": "/assets/images/top-color/venus_vein/normal.webp",
+        "roughness": "/assets/images/top-color/venus_vein/roughness.webp",
+        "metalness": "/assets/images/top-color/venus_vein/metalness.webp"
+      }
+    },
+    {
+      "id": "vintage_bronze",
+      "label": "Vintage Bronze",
+      "finishType": "natural",
+      "preview": "/assets/images/top-color/vintage_bronze/preview.webp",
+      "samplePreview": "/assets/images/top-color/vintage_bronze/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/vintage_bronze/base_color.webp",
+        "mdf": "/assets/images/top-color/vintage_bronze/mdf_color.webp",
+        "normal": "/assets/images/top-color/vintage_bronze/normal.webp",
+        "roughness": "/assets/images/top-color/vintage_bronze/roughness.webp",
+        "metalness": "/assets/images/top-color/vintage_bronze/metalness.webp"
+      }
+    },
+    {
+      "id": "wild_forest",
+      "label": "Wild Forest",
+      "finishType": "silk",
+      "preview": "/assets/images/top-color/wild_forest/preview.jpg",
+      "samplePreview": "/assets/images/top-color/wild_forest/sample_preview.webp",
+      "textures": {
+        "baseColor": "/assets/images/top-color/wild_forest/base_color.webp",
+        "mdf": "/assets/images/top-color/wild_forest/mdf_color.webp",
+        "normal": "/assets/images/top-color/wild_forest/normal.webp",
+        "roughness": "/assets/images/top-color/wild_forest/roughness.webp",
+        "metalness": "/assets/images/top-color/wild_forest/metalness.webp"
+      }
+    }
+  ]
+}

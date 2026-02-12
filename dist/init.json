@@ -1,0 +1,4 @@
+{
+  "glbUrl": "./glbs/TShirt.glb",
+  "availableColors": ["#000000", "#FFFFFF", "#FF0000", "#00FF00", "#0000FF"]
+}

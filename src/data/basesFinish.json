@@ -1,0 +1,249 @@
+{
+  "basesFinish": [
+    {
+      "baseId": "linea",
+      "colors": [
+        {
+          "colorId": "gold",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/linea/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/linea/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/linea/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "book_black",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/linea/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/linea/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/linea/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "axis",
+      "colors": [
+        {
+          "colorId": "cashmere_metal",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/axis/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/axis/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/axis/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/axis/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/axis/color2/ao.webp"
+          }
+        },
+        {
+          "colorId": "graphite",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/axis/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/axis/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/axis/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/axis/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/axis/color1/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "linea-dome",
+      "colors": [
+        {
+          "colorId": "gold",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea-dome/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/linea-dome/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/linea-dome/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea-dome/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/linea-dome/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "cocoa_iron",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea-dome/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/linea-dome/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/linea-dome/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea-dome/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/linea-dome/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "linea-contour",
+      "colors": [
+        {
+          "colorId": "gold",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea-contour/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/linea-contour/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/linea-contour/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea-contour/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/linea-contour/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "cocoa_iron",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/linea-contour/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/linea-contour/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/linea-contour/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/linea-contour/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/linea-contour/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "curva",
+      "colors": [
+        {
+          "colorId": "champagne",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/curva/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/curva/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/curva/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/curva/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/curva/color1/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "cradle",
+      "colors": [
+        {
+          "colorId": "champagne",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/cradle/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/cradle/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/cradle/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/cradle/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/cradle/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "graphite",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/cradle/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/cradle/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/cradle/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/cradle/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/cradle/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "twiste",
+      "colors": [
+        {
+          "colorId": "brass_teak",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/twiste/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/twiste/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/twiste/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/twiste/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/twiste/color1/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "moon",
+      "colors": [
+        {
+          "colorId": "cloth_grey",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/moon/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/moon/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/moon/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/moon/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/moon/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "cloth_gold",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/moon/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/moon/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/moon/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/moon/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/moon/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "thrio",
+      "colors": [
+        {
+          "colorId": "silken_brass",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/thrio/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/thrio/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/thrio/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/thrio/color1/metallic.webp",
+            "ao": "/assets/images/base-shape/thrio/color1/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "base_8",
+      "colors": [
+        {
+          "colorId": "wooden",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/base-8/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/base-8/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/base-8/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/base-8/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/base-8/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "silken_grey",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/base-8/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/base-8/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/base-8/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/base-8/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/base-8/color2/ao.webp"
+          }
+        }
+      ]
+    },
+    {
+      "baseId": "butterfly",
+      "colors": [
+        {
+          "colorId": "wooden",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/butterfly/color1/base_color.webp",
+            "normal": "/assets/images/base-shape/butterfly/color1/normal.webp",
+            "roughness": "/assets/images/base-shape/butterfly/color1/roughness.webp",
+            "metallic": "/assets/images/base-shape/butterfly/color1/metalness.webp",
+            "ao": "/assets/images/base-shape/butterfly/color1/ao.webp"
+          }
+        },
+        {
+          "colorId": "silken_grey",
+          "textureMaps": {
+            "diffuse": "/assets/images/base-shape/butterfly/color2/base_color.webp",
+            "normal": "/assets/images/base-shape/butterfly/color2/normal.webp",
+            "roughness": "/assets/images/base-shape/butterfly/color2/roughness.webp",
+            "metallic": "/assets/images/base-shape/butterfly/color2/metalness.webp",
+            "ao": "/assets/images/base-shape/butterfly/color2/ao.webp"
+          }
+        }
+      ]
+    }
+  ]
+}

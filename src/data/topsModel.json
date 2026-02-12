@@ -1,0 +1,81 @@
+[
+  {
+    "id": "capsule",
+    "label": "Capsule",
+    "preview": "/assets/images/top-shape/capsule/preview.webp",
+    "modelUrl": "/assets/images/top-shape/capsule/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/capsule/model-mdf.glb",
+    "dimensionConstraints": {
+      "minLength": 1600,
+      "maxLength": 3180,
+      "minWidth": 800,
+      "maxWidth": 1300
+    }
+  },
+  {
+    "id": "oblong",
+    "label": "Oblong",
+    "preview": "/assets/images/top-shape/oblong/preview.webp",
+    "modelUrl": "/assets/images/top-shape/oblong/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/oblong/model-mdf.glb",
+
+    "dimensionConstraints": {
+      "minLength": 1600,
+      "maxLength": 3180,
+      "minWidth": 800,
+      "maxWidth": 1300
+    }
+  },
+  {
+    "id": "oval",
+    "label": "Oval",
+    "preview": "/assets/images/top-shape/oval/preview.webp",
+    "modelUrl": "/assets/images/top-shape/oval/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/oval/model-mdf.glb",
+
+    "dimensionConstraints": {
+      "minLength": 1600,
+      "maxLength": 3180,
+      "minWidth": 800,
+      "maxWidth": 1300
+    }
+  },
+  {
+    "id": "rectangle",
+    "label": "Rectangle",
+    "preview": "/assets/images/top-shape/rectangle/preview.webp",
+    "modelUrl": "/assets/images/top-shape/rectangle/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/rectangle/model-mdf.glb",
+
+    "dimensionConstraints": {
+      "minLength": 1600,
+      "maxLength": 3180,
+      "minWidth": 800,
+      "maxWidth": 1300
+    }
+  },
+  {
+    "id": "round",
+    "label": "Round",
+    "preview": "/assets/images/top-shape/round/preview.webp",
+    "modelUrl": "/assets/images/top-shape/round/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/round/model-mdf.glb",
+
+    "dimensionConstraints": {
+      "maxTopDiameter": 1580,
+      "minTopDiameter": 1200
+    }
+  },
+  {
+    "id": "square",
+    "label": "Square",
+    "preview": "/assets/images/top-shape/square/preview.webp",
+    "modelUrl": "/assets/images/top-shape/square/model.glb",
+    "modelMdfUrl": "/assets/images/top-shape/square/model-mdf.glb",
+
+    "dimensionConstraints": {
+      "maxLengthWidth": 1580,
+      "minLengthWidth": 1200
+    }
+  }
+]

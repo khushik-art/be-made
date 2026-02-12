@@ -1,0 +1,198 @@
+{
+  "bases": [
+    {
+      "id": "linea",
+      "label": "Linea",
+      "thumbnail": "/assets/images/base-shape/linea/preview.webp",
+      "modelUrl": "/assets/images/base-shape/linea/model.glb",
+      "colors": [
+        {
+          "id": "gold",
+          "label": "Gold",
+          "preview": "/assets/images/base-shape/linea/color1/preview.webp"
+        },
+        {
+          "id": "book_black",
+          "label": "Book Black",
+          "preview": "/assets/images/base-shape/linea/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "axis",
+      "label": "Axis",
+      "thumbnail": "/assets/images/base-shape/axis/preview.webp",
+      "modelUrl": "/assets/images/base-shape/axis/model.glb",
+      "colors": [
+        {
+          "id": "cashmere_metal",
+          "label": "Cashmere Metal",
+          "preview": "/assets/images/base-shape/axis/color2/preview.webp"
+        },
+        {
+          "id": "graphite",
+          "label": "Graphite",
+          "preview": "/assets/images/base-shape/axis/color1/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "linea-dome",
+      "label": "Linea Dome",
+      "thumbnail": "/assets/images/base-shape/linea-dome/preview.webp",
+      "modelUrl": "/assets/images/base-shape/linea-dome/model.glb",
+      "colors": [
+        {
+          "id": "gold",
+          "label": "Gold",
+          "preview": "/assets/images/base-shape/linea-dome/color1/preview.webp"
+        },
+        {
+          "id": "cocoa_iron",
+          "label": "Cocoa Iron",
+          "preview": "/assets/images/base-shape/linea-dome/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["round", "square"]
+    },
+    {
+      "id": "linea-contour",
+      "label": "Linea Contour",
+      "thumbnail": "/assets/images/base-shape/linea-contour/preview.webp",
+      "modelUrl": "/assets/images/base-shape/linea-contour/model.glb",
+      "colors": [
+        {
+          "id": "gold",
+          "label": "Gold",
+          "preview": "/assets/images/base-shape/linea-contour/color1/preview.webp"
+        },
+        {
+          "id": "cocoa_iron",
+          "label": "Cocoa Iron",
+          "preview": "/assets/images/base-shape/linea-contour/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "curva",
+      "label": "Curva",
+      "thumbnail": "/assets/images/base-shape/curva/preview.webp",
+      "modelUrl": "/assets/images/base-shape/curva/model.glb",
+      "colors": [
+        {
+          "id": "champagne",
+          "label": "Champagne",
+          "preview": "/assets/images/base-shape/curva/color1/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "cradle",
+      "label": "Cradle",
+      "thumbnail": "/assets/images/base-shape/cradle/preview.webp",
+      "modelUrl": "/assets/images/base-shape/cradle/model.glb",
+      "colors": [
+        {
+          "id": "champagne",
+          "label": "Champagne",
+          "preview": "/assets/images/base-shape/cradle/color1/preview.webp"
+        },
+        {
+          "id": "graphite",
+          "label": "Graphite",
+          "preview": "/assets/images/base-shape/cradle/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "twiste",
+      "label": "Twiste",
+      "thumbnail": "/assets/images/base-shape/twiste/preview.webp",
+      "modelUrl": "/assets/images/base-shape/twiste/model.glb",
+      "colors": [
+        {
+          "id": "brass_teak",
+          "label": "Brass Teak",
+          "preview": "/assets/images/base-shape/twiste/color1/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "moon",
+      "label": "Moon",
+      "thumbnail": "/assets/images/base-shape/moon/preview.webp",
+      "modelUrl": "/assets/images/base-shape/moon/model.glb",
+      "colors": [
+        {
+          "id": "cloth_grey",
+          "label": "Cloth Grey",
+          "preview": "/assets/images/base-shape/moon/color1/preview.webp"
+        },
+        {
+          "id": "cloth_gold",
+          "label": "Cloth Gold",
+          "preview": "/assets/images/base-shape/moon/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "thrio",
+      "label": "Thrio",
+      "thumbnail": "/assets/images/base-shape/thrio/preview.webp",
+      "modelUrl": "/assets/images/base-shape/thrio/model.glb",
+      "colors": [
+        {
+          "id": "silken_brass",
+          "label": "Silken Brass",
+          "preview": "/assets/images/base-shape/thrio/color1/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "base_8",
+      "label": "Base 8",
+      "thumbnail": "/assets/images/base-shape/base-8/preview.webp",
+      "modelUrl": "/assets/images/base-shape/base-8/model.glb",
+      "colors": [
+        {
+          "id": "wooden",
+          "label": "Wooden",
+          "preview": "/assets/images/base-shape/base-8/color1/preview.webp"
+        },
+        {
+          "id": "silken_grey",
+          "label": "Silken Gray",
+          "preview": "/assets/images/base-shape/base-8/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    },
+    {
+      "id": "butterfly",
+      "label": "Butterfly",
+      "thumbnail": "/assets/images/base-shape/butterfly/preview.webp",
+      "modelUrl": "/assets/images/base-shape/butterfly/model.glb",
+      "colors": [
+        {
+          "id": "wooden",
+          "label": "Wooden",
+          "preview": "/assets/images//base-shape/butterfly/color1/preview.webp"
+        },
+        {
+          "id": "silken_grey",
+          "label": "Silken Gray",
+          "preview": "/assets/images/base-shape/butterfly/color2/preview.webp"
+        }
+      ],
+      "supportedTopShapes": ["capsule", "oblong", "oval", "rectangle"]
+    }
+  ]
+}
