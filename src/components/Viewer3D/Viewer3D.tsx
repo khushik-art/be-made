@@ -223,6 +223,8 @@ const CameraRig = observer(() => {
       minDistance={2.5}
       maxDistance={12}
       enablePan={false}
+      enableRotate={false}
+      enableZoom={false}
     />
   );
 });
