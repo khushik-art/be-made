@@ -29,11 +29,10 @@ export const FooterSummary = observer(() => {
         alignItems: 'center',
         backgroundColor: 'white',
         borderTop: '1px solid #eee',
-
+        display: { md: 'flex', xs: 'none' },
         bottom: 0,
-        display: 'flex',
         gap: 4,
-        overflowX: 'a',
+        overflowX: 'auto',
         overflowY: 'hidden',
 
         position: 'sticky',

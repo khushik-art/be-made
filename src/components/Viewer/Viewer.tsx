@@ -42,6 +42,7 @@ export const Viewer = observer(() => {
         <Box
           sx={{
             display: 'flex',
+            flexDirection: { md: 'row', xs: 'column' },
             minWidth: 0,
             minHeight: '100%',
           }}>
@@ -54,11 +55,11 @@ export const Viewer = observer(() => {
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               flex: 1,
-              height: 'calc(100vh - 72px - 64px)',
+              height: { md: 'calc(100vh - 72px - 64px)', xs: '52vh' },
               minWidth: 0,
               overflow: 'hidden',
-              position: 'sticky',
-              top: 0, // nav + footer
+              position: { md: 'sticky', xs: 'relative' },
+              top: { md: 0, xs: 'auto' }, // nav + footer
             }}>
             <Viewer3D />
           </Box>

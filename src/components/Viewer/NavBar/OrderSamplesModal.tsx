@@ -56,6 +56,9 @@ export const OrderSamplesModal = ({
   const [hoverPreview, setHoverPreview] = useState<HoverPreviewState | null>(
     null,
   );
+  const [loadedSamplePreviews, setLoadedSamplePreviews] = useState<
+    Record<string, boolean>
+  >({});
 
   const descriptions = useMemo(() => {
     return new Map(topColors.map((item) => [item.id, item.description]));
@@ -77,6 +80,9 @@ export const OrderSamplesModal = ({
   const hoveredDescription = hoveredFinish
     ? (descriptions.get(hoveredFinish.id) ?? 'Sample texture preview.')
     : '';
+  const isHoveredPreviewLoading = hoveredFinish
+    ? !loadedSamplePreviews[hoveredFinish.id]
+    : false;
 
   const selectedCount = selectedFinishIds.length;
   const canBuyNow = selectedCount > 0;
@@ -305,17 +311,54 @@ export const OrderSamplesModal = ({
               zIndex: 1600,
             }}>
             <Box
-              component="img"
-              src={hoveredFinish.samplePreview}
-              alt={hoveredFinish.label}
               sx={{
-                borderRadius: 1,
-                display: 'block',
                 height: 'min(68vh, 620px)',
-                objectFit: 'cover',
-                width: '100%',
-              }}
-            />
+                position: 'relative',
+              }}>
+              <Box
+                component="img"
+                src={hoveredFinish.samplePreview}
+                alt={hoveredFinish.label}
+                onLoad={() =>
+                  setLoadedSamplePreviews((current) => ({
+                    ...current,
+                    [hoveredFinish.id]: true,
+                  }))
+                }
+                onError={() =>
+                  setLoadedSamplePreviews((current) => ({
+                    ...current,
+                    [hoveredFinish.id]: true,
+                  }))
+                }
+                sx={{
+                  borderRadius: 1,
+                  display: 'block',
+                  height: '100%',
+                  objectFit: 'cover',
+                  opacity: isHoveredPreviewLoading ? 0 : 1,
+                  transition: 'opacity 0.2s ease',
+                  width: '100%',
+                }}
+              />
+              {isHoveredPreviewLoading && (
+                <Box
+                  sx={{
+                    alignItems: 'center',
+                    backgroundColor: '#f2f2f2',
+                    borderRadius: 1,
+                    color: '#757575',
+                    display: 'flex',
+                    fontSize: 13,
+                    inset: 0,
+                    justifyContent: 'center',
+                    position: 'absolute',
+                    zIndex: 1,
+                  }}>
+                  Loading preview...
+                </Box>
+              )}
+            </Box>
             <Typography sx={{ fontSize: 24, fontWeight: 700, mt: 1.3 }}>
               {hoveredFinish.label}
             </Typography>

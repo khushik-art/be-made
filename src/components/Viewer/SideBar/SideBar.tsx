@@ -14,9 +14,10 @@ export const SideBar = observer(() => {
     <Box
       sx={{
         bgcolor: 'white',
-        borderLeft: '1px solid #eee',
-        p: 3,
-        width: 360,
+        borderLeft: { md: '1px solid #eee', xs: 'none' },
+        borderTop: { md: 'none', xs: '1px solid #eee' },
+        p: { md: 3, xs: 2 },
+        width: { md: 360, xs: '100%' },
       }}>
       <Box id="section-base">
         <BaseSelector />
