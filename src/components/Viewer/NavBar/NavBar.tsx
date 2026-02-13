@@ -19,16 +19,17 @@ export const NavBar = observer(() => {
           borderBottom: '1px solid #e6e6e6',
           display: 'flex',
           flexWrap: 'wrap',
-          minHeight: 72,
+          minHeight: { md: 72, xs: 86 },
           px: { md: 5, xs: 2 },
-          py: { md: 0, xs: 1 },
+          py: { md: 0, xs: 0.8 },
         }}>
         <Box
           sx={{
             alignItems: 'center',
             cursor: 'pointer',
             display: 'flex',
-            mr: 6,
+            mr: { md: 6, xs: 1 },
+            minWidth: 0,
           }}>
           <img
             src="/assets/images/header_logo.svg"
@@ -47,8 +48,10 @@ export const NavBar = observer(() => {
             flexGrow: 1,
             gap: { md: 4, xs: 2.2 },
             overflowX: { xs: 'auto', md: 'visible' },
-            pb: { xs: 0.5, md: 0 },
+            pb: { xs: 0.6, md: 0 },
+            pt: { xs: 0.6, md: 0 },
             order: { xs: 3, md: 2 },
+            borderTop: { xs: '1px solid #ececec', md: 'none' },
           }}>
           {NAV_STEPS.map(({ label, step }) => {
             const isActive = designManager.isStepActive(step);
@@ -79,7 +82,7 @@ export const NavBar = observer(() => {
                   background: 'transparent',
                   borderRadius: 0,
                   color: isActive ? '#111' : '#777',
-                  fontSize: 13,
+                  fontSize: { md: 13, xs: 12 },
                   fontWeight: isActive ? 600 : 400,
                   letterSpacing: '0.08em',
                   minWidth: 'unset',

@@ -28,7 +28,7 @@ export const TopColorSelector = observer(() => {
       sx={{
         display: 'grid',
         gap: 2,
-        gridTemplateColumns: 'repeat(3, 1fr)',
+        gridTemplateColumns: { xs: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, 1fr)' },
         mb: 3,
       }}>
       {items.map((finish) => {
@@ -61,7 +61,7 @@ export const TopColorSelector = observer(() => {
                 alt={finish.label}
                 style={{
                   display: 'block',
-                  height: 96,
+                  aspectRatio: '1 / 1',
                   objectFit: 'cover',
                   transform: 'scale(1)',
                   transition: 'transform 0.25s ease',

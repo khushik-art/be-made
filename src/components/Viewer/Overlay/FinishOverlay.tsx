@@ -35,12 +35,17 @@ export const FinishOverlay = observer(
           backgroundColor: '#f2f3f4',
           borderRadius: 2.2,
           boxShadow: '0 10px 24px rgba(0,0,0,0.14)',
-          left: 22,
-          maxWidth: 'min(520px, calc(100% - 44px))',
-          p: 2.2,
+          left: { md: 22, xs: 12 },
+          maxWidth: {
+            md: 'min(520px, calc(100% - 44px))',
+            xs: 'min(340px, calc(100% - 88px))',
+          },
+          maxHeight: { xs: '40%', md: 'none' },
+          overflow: { xs: 'auto', md: 'visible' },
+          p: { md: 2.2, xs: 1.2 },
           pointerEvents: 'auto',
           position: 'absolute',
-          bottom: 80,
+          bottom: { md: 80, xs: 54 },
           zIndex: 21,
         }}>
         <IconButton
@@ -50,8 +55,8 @@ export const FinishOverlay = observer(
           sx={{
             color: '#59606a',
             position: 'absolute',
-            right: 12,
-            top: 12,
+            right: { md: 12, xs: 8 },
+            top: { md: 12, xs: 6 },
           }}>
           <CloseIcon />
         </IconButton>
@@ -59,10 +64,10 @@ export const FinishOverlay = observer(
         <Typography
           sx={{
             color: '#1f2328',
-            fontSize: 20,
+            fontSize: { md: 20, xs: 14 },
             fontWeight: 600,
             lineHeight: 1.1,
-            mb: 1,
+            mb: 0.5,
             pr: 4,
           }}>
           {finish.label}
@@ -74,18 +79,18 @@ export const FinishOverlay = observer(
           sx={{
             backgroundColor: '#e3e4e5',
             color: '#5a5f64',
-            fontSize: 15,
+            fontSize: { md: 15, xs: 11 },
             fontWeight: 300,
-            mb: 1.2,
+            mb: 0.6,
           }}
         />
 
         <Typography
           sx={{
             color: '#61666d',
-            fontSize: 14,
+            fontSize: { md: 14, xs: 11 },
             lineHeight: 1.35,
-            maxWidth: 440,
+            maxWidth: { md: 440, xs: '100%' },
           }}>
           {description}
         </Typography>

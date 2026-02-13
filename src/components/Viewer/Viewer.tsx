@@ -17,6 +17,7 @@ export const Viewer = observer(() => {
   useScrollSpy(mainRef.current, (step) => {
     designManager.setStep(step);
   });
+
   return (
     <Box
       sx={{
@@ -26,49 +27,47 @@ export const Viewer = observer(() => {
         height: '100vh',
         position: 'relative',
       }}>
-      {/* NAV */}
       <NavBar />
 
-      {/* SCROLL CONTAINER (IMPORTANT) */}
       <Box
         ref={mainRef}
         id="configurator-scroll-container"
         component="main"
         sx={{
           flex: 1,
-          overflowY: 'auto', // ← ONLY scroll here
+          overflowX: 'hidden',
+          overflowY: 'auto',
           position: 'relative',
         }}>
         <Box
           sx={{
             display: 'flex',
             flexDirection: { md: 'row', xs: 'column' },
-            minWidth: 0,
             minHeight: '100%',
+            minWidth: 0,
           }}>
-          {/* Viewer area */}
           <Box
             sx={{
-              backgroundImage:
-                'url("/assets/images/background/background.svg")',
+              backgroundImage: 'url("/assets/images/background/background.svg")',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               flex: 1,
-              height: { md: 'calc(100vh - 72px - 64px)', xs: '52vh' },
+              height: {
+                md: 'calc(100vh - 72px - 64px)',
+                xs: 'clamp(360px, 96vw, 460px)',
+              },
               minWidth: 0,
               overflow: 'hidden',
               position: { md: 'sticky', xs: 'relative' },
-              top: { md: 0, xs: 'auto' }, // nav + footer
+              top: { md: 0, xs: 'auto' },
             }}>
             <Viewer3D />
           </Box>
-          {/* Sidebar */}
           <SideBar />
         </Box>
       </Box>
 
-      {/* FOOTER */}
       <FooterSummary />
 
       {showGlobalLoader && (

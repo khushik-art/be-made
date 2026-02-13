@@ -16,6 +16,7 @@ export const SideBar = observer(() => {
         bgcolor: 'white',
         borderLeft: { md: '1px solid #eee', xs: 'none' },
         borderTop: { md: 'none', xs: '1px solid #eee' },
+        overflowX: 'hidden',
         p: { md: 3, xs: 2 },
         width: { md: 360, xs: '100%' },
       }}>

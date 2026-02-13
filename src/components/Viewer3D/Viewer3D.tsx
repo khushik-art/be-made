@@ -4,7 +4,14 @@ import CloseFullscreenRoundedIcon from '@mui/icons-material/CloseFullscreenRound
 import OpenInFullRoundedIcon from '@mui/icons-material/OpenInFullRounded';
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
-import { Box, CircularProgress, IconButton, Tooltip } from '@mui/material';
+import {
+  Box,
+  CircularProgress,
+  IconButton,
+  Tooltip,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 import { OrbitControls } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { observer } from 'mobx-react-lite';
@@ -95,7 +102,7 @@ const CameraViewOverlay = observer(() => {
         }}>
         <IconButton
           onClick={() => setCameraView(activeIndex - 1)}
-          sx={{ color: '#656a70' }}>
+          sx={{ color: '#656a70', p: { md: 1, xs: 0.6 } }}>
           <ChevronLeftRoundedIcon />
         </IconButton>
 
@@ -104,15 +111,15 @@ const CameraViewOverlay = observer(() => {
             <IconButton
               onClick={() => setCameraView(idx)}
               sx={{
-                p: '6px',
+                p: { md: '6px', xs: '3px' },
               }}>
               <Box
                 sx={{
                   bgcolor: idx === activeIndex ? '#5f6368' : '#f0f0f0',
                   borderRadius: '50%',
-                  height: 16,
+                  height: { md: 16, xs: 13 },
                   transition: 'all 0.2s ease',
-                  width: 16,
+                  width: { md: 16, xs: 13 },
                 }}
               />
             </IconButton>
@@ -121,7 +128,7 @@ const CameraViewOverlay = observer(() => {
 
         <IconButton
           onClick={() => setCameraView(activeIndex + 1)}
-          sx={{ color: '#656a70' }}>
+          sx={{ color: '#656a70', p: { md: 1, xs: 0.6 } }}>
           <ChevronRightRoundedIcon />
         </IconButton>
       </Box>
@@ -142,11 +149,11 @@ const CanvasActionsOverlay = ({
     <Box
       sx={{
         display: 'flex',
-        gap: 1.2,
+        gap: { md: 1.2, xs: 0.8 },
         pointerEvents: 'auto',
         position: 'absolute',
-        right: 22,
-        top: 22,
+        right: { md: 22, xs: 12 },
+        top: { md: 22, xs: 12 },
         zIndex: 20,
       }}>
       <IconButton
@@ -155,8 +162,8 @@ const CanvasActionsOverlay = ({
           backgroundColor: '#f8f8f8',
           border: '1px solid #c9c9c9',
           borderRadius: 1,
-          height: 42,
-          width: 42,
+          height: { md: 42, xs: 36 },
+          width: { md: 42, xs: 36 },
         }}>
         <SaveOutlinedIcon fontSize="small" />
       </IconButton>
@@ -167,8 +174,8 @@ const CanvasActionsOverlay = ({
           backgroundColor: '#f8f8f8',
           border: '1px solid #c9c9c9',
           borderRadius: 1,
-          height: 42,
-          width: 42,
+          height: { md: 42, xs: 36 },
+          width: { md: 42, xs: 36 },
         }}>
         <ShareOutlinedIcon fontSize="small" />
       </IconButton>
@@ -179,8 +186,8 @@ const CanvasActionsOverlay = ({
           backgroundColor: '#f8f8f8',
           border: '1px solid #c9c9c9',
           borderRadius: 1,
-          height: 42,
-          width: 42,
+          height: { md: 42, xs: 36 },
+          width: { md: 42, xs: 36 },
         }}>
         {isFullscreen ? (
           <CloseFullscreenRoundedIcon fontSize="small" />
@@ -251,11 +258,17 @@ const SceneBootstrap = observer(() => {
 export const Viewer3D = observer(() => {
   const dpr = useMemo(() => [1, 1.75] as [number, number], []);
   const rootRef = useRef<HTMLDivElement | null>(null);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const { design3DManager } = useMainContext();
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [isFinishOverlayOpen, setIsFinishOverlayOpen] = useState(true);
+  const [isFinishOverlayOpen, setIsFinishOverlayOpen] = useState(!isMobile);
   const showCanvasLoader =
     design3DManager.hasInitialLoadCompleted && design3DManager.isLoading;
+
+  useEffect(() => {
+    setIsFinishOverlayOpen(!isMobile);
+  }, [isMobile]);
 
   const handleDownload = useCallback(() => {
     const canvas = rootRef.current?.querySelector('canvas') as
@@ -301,14 +314,28 @@ export const Viewer3D = observer(() => {
       const full = document.fullscreenElement === rootRef.current;
       setIsFullscreen(full);
 
-      // Force layout/canvas recalculation after exiting fullscreen.
-      requestAnimationFrame(() => {
-        window.dispatchEvent(new Event('resize'));
-      });
+      // Force repeated layout/canvas recalculation after fullscreen transitions,
+      // especially on mobile where viewport metrics settle in phases.
+      const emitResize = () => window.dispatchEvent(new Event('resize'));
+      requestAnimationFrame(emitResize);
+      setTimeout(emitResize, 120);
+      setTimeout(emitResize, 320);
     };
 
     document.addEventListener('fullscreenchange', onChange);
     return () => document.removeEventListener('fullscreenchange', onChange);
+  }, []);
+
+  useEffect(() => {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+
+    const onViewportResize = () => {
+      window.dispatchEvent(new Event('resize'));
+    };
+
+    viewport.addEventListener('resize', onViewportResize);
+    return () => viewport.removeEventListener('resize', onViewportResize);
   }, []);
 
   useEffect(() => {

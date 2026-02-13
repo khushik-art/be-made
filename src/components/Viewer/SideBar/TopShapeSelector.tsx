@@ -18,7 +18,7 @@ export const TopShapeSelector = observer(() => {
         sx={{
           display: 'grid',
           gap: 2,
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: { xs: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, 1fr)' },
         }}>
         {allShapes.map((shape) => {
           const isSupported = designManager.isTopShapeSupported(shape.id);
@@ -53,7 +53,7 @@ export const TopShapeSelector = observer(() => {
                   src={shape.preview}
                   alt={shape.label}
                   style={{
-                    height: 96,
+                    aspectRatio: '1 / 1',
                     objectFit: 'contain',
                     transform: 'scale(1)',
                     transition: 'transform 0.25s ease',

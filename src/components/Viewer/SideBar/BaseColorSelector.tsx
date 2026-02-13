@@ -19,7 +19,7 @@ export const BaseColorSelector = observer(() => {
         sx={{
           display: 'grid',
           gap: 2,
-          gridTemplateColumns: 'repeat(4, 1fr)',
+          gridTemplateColumns: { xs: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)' },
         }}>
         {colors.map((color) => {
           const isSelected = color.id === designManager.selectedBaseColor;
@@ -33,10 +33,10 @@ export const BaseColorSelector = observer(() => {
                   border: isSelected ? '2px solid #000' : '1px solid #ddd',
                   borderRadius: 3,
                   cursor: 'pointer',
-                  height: 96,
+                  aspectRatio: '1 / 1',
                   overflow: 'hidden',
                   position: 'relative',
-                  width: 96,
+                  width: '100%',
                 }}>
                 <img
                   src={color.preview}

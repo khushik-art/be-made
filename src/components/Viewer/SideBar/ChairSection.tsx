@@ -65,7 +65,10 @@ export const ChairSection = observer(() => {
       </Typography>
 
       {/* Chair cards */}
-      <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={2}>
+      <Box
+        display="grid"
+        gridTemplateColumns={{ xs: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, 1fr)' }}
+        gap={2}>
         {chairs.map((chair) => {
           const selected = designManager.selectedChairId === chair.id;
 
@@ -107,6 +110,7 @@ export const ChairSection = observer(() => {
                 src={chair.colors[0]?.thumbnailUrl}
                 alt={chair.name}
                 style={{
+                  aspectRatio: '1 / 1',
                   marginBottom: 8,
                   objectFit: 'contain',
                   transform: 'scale(1)',

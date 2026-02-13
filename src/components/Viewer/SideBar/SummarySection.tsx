@@ -161,6 +161,41 @@ export const SummarySection = observer(() => {
         }}>
         Place Order
       </Button>
+
+      <Box
+        sx={{
+          borderTop: '1px solid #e8e8e8',
+          display: { xs: 'block', md: 'none' },
+          mt: 3,
+          pt: 2,
+        }}>
+        <Box
+          sx={{
+            display: 'grid',
+            gap: 1.5,
+            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+          }}>
+          <MobileFooterItem label="Table Top" value={selectedFinish.label} />
+          <MobileFooterItem label="Table Base" value={selectedBase.label} />
+          <MobileFooterItem label="Base Colour" value={selectedBaseColor} />
+          <MobileFooterItem label="Dimensions" value={dimensionsLabel} />
+          <MobileFooterItem label="Chair Style" value={selectedChair?.name ?? 'N/A'} />
+          <MobileFooterItem
+            label="Chair Color"
+            value={selectedChairColor?.name ?? 'N/A'}
+          />
+        </Box>
+        <Box sx={{ mt: 1.8, textAlign: 'center' }}>
+          <Typography sx={{ color: '#8b8b8b', fontSize: 12 }}>
+            Chair Quantity
+          </Typography>
+          <Typography sx={{ fontSize: 16, fontWeight: 600 }}>
+            {designManager.chairQuantity > 0
+              ? designManager.chairQuantity
+              : 'N/A'}
+          </Typography>
+        </Box>
+      </Box>
     </Box>
   );
 });
@@ -180,10 +215,34 @@ const SummaryRow = ({ label, value, bold }: RowProps) => (
       <Typography
         variant="body2"
         fontWeight={bold ? 700 : 500}
+        sx={{ maxWidth: '55%', overflowWrap: 'anywhere', textAlign: 'right' }}
         textTransform="capitalize">
         {value}
       </Typography>
     </Box>
     {!bold && <Divider />}
   </>
+);
+
+const MobileFooterItem = ({ label, value }: { label: string; value: string }) => (
+  <Box sx={{ minWidth: 0 }}>
+    <Typography
+      sx={{
+        color: '#8b8b8b',
+        display: 'block',
+        fontSize: 12,
+      }}>
+      {label}
+    </Typography>
+    <Typography
+      sx={{
+        fontSize: 16,
+        fontWeight: 600,
+        lineHeight: 1.2,
+        textTransform: 'capitalize',
+        wordBreak: 'break-word',
+      }}>
+      {value}
+    </Typography>
+  </Box>
 );

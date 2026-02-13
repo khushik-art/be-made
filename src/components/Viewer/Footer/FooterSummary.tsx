@@ -3,6 +3,17 @@ import { observer } from 'mobx-react-lite';
 
 import { useMainContext } from '../../../hooks/useMainContext';
 
+const SummaryItem = ({ label, value }: { label: string; value: string }) => (
+  <Box sx={{ minWidth: 120 }}>
+    <Typography variant="caption" sx={{ color: '#8b8b8b', display: 'block' }}>
+      {label}
+    </Typography>
+    <Typography variant="body2" sx={{ fontWeight: 600, textTransform: 'capitalize' }}>
+      {value}
+    </Typography>
+  </Box>
+);
+
 export const FooterSummary = observer(() => {
   const { dataStore, designManager } = useMainContext();
   const selectedChair = designManager.selectedChairId
@@ -12,16 +23,19 @@ export const FooterSummary = observer(() => {
     (c) => c.id === designManager.selectedChairColor,
   );
 
-  const Item = ({ label, value }: { label: string; value: string }) => (
-    <Box sx={{ minWidth: 140 }}>
-      <Typography variant="caption" sx={{ color: '#777', display: 'block' }}>
-        {label}
-      </Typography>
-      <Typography variant="body2" sx={{ fontWeight: 600 }}>
-        {value}
-      </Typography>
-    </Box>
-  );
+  const values = [
+    { label: 'Table Top', value: designManager.selectedTopColor ?? 'N/A' },
+    { label: 'Table Base', value: designManager.selectedBaseId ?? 'N/A' },
+    { label: 'Base Colour', value: designManager.selectedBaseColor ?? 'N/A' },
+    {
+      label: 'Dimensions',
+      value: designManager.length
+        ? `${designManager.length} x ${designManager.width}`
+        : 'N/A',
+    },
+    { label: 'Chair Style', value: selectedChair?.name ?? 'N/A' },
+    { label: 'Chair Color', value: selectedChairColor?.name ?? 'N/A' },
+  ];
 
   return (
     <Box
@@ -29,46 +43,23 @@ export const FooterSummary = observer(() => {
         alignItems: 'center',
         backgroundColor: 'white',
         borderTop: '1px solid #eee',
-        display: { md: 'flex', xs: 'none' },
         bottom: 0,
+        display: { md: 'flex', xs: 'none' },
         gap: 4,
         overflowX: 'auto',
         overflowY: 'hidden',
-
         position: 'sticky',
         px: 4,
         py: 2,
         zIndex: 900,
       }}>
-      <Item label="Your Build" value="Dining Table" />
+      <SummaryItem label="Your Build" value="Dining Table" />
 
       <Divider orientation="vertical" flexItem />
 
-      <Item label="Table Top" value={designManager.selectedTopColor ?? '—'} />
-
-      <Item label="Table Base" value={designManager.selectedBaseId ?? '—'} />
-
-      <Item
-        label="Base Colour"
-        value={designManager.selectedBaseColor ?? '—'}
-      />
-
-      <Item
-        label="Dimensions (mm)"
-        value={
-          designManager.length
-            ? `${designManager.length} × ${designManager.width}`
-            : '—'
-        }
-      />
-
-      <Item
-        label="Table Top Shape"
-        value={designManager.selectedTopShape ?? '—'}
-      />
-
-      <Item label="Chair Style" value={selectedChair?.name ?? 'N/A'} />
-      <Item label="Chair Color" value={selectedChairColor?.name ?? 'N/A'} />
+      {values.map((item) => (
+        <SummaryItem key={item.label} label={item.label} value={item.value} />
+      ))}
     </Box>
   );
 });
