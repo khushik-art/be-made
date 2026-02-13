@@ -15,6 +15,7 @@ import {
 import { OrbitControls } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { observer } from 'mobx-react-lite';
+import { useSnackbar } from 'notistack';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
@@ -23,6 +24,7 @@ import { FinishOverlay } from '../Viewer/Overlay/FinishOverlay';
 import { OverlayDots } from '../Viewer/Overlay/OverlayDots';
 import { useMainContext } from '../../hooks/useMainContext';
 import type { ExtendedCameraView } from '../../state/CameraManager';
+import { buildShareUrl } from '../../utils/shareConfig';
 
 /* ================= Camera Views Overlay ================= */
 
@@ -139,10 +141,12 @@ const CameraViewOverlay = observer(() => {
 const CanvasActionsOverlay = ({
   isFullscreen,
   onDownload,
+  onShare,
   onToggleFullscreen,
 }: {
   isFullscreen: boolean;
   onDownload: () => void;
+  onShare: () => void;
   onToggleFullscreen: () => void;
 }) => {
   return (
@@ -169,7 +173,7 @@ const CanvasActionsOverlay = ({
       </IconButton>
 
       <IconButton
-        disabled
+        onClick={onShare}
         sx={{
           backgroundColor: '#f8f8f8',
           border: '1px solid #c9c9c9',
@@ -260,7 +264,8 @@ export const Viewer3D = observer(() => {
   const rootRef = useRef<HTMLDivElement | null>(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-  const { design3DManager } = useMainContext();
+  const { enqueueSnackbar } = useSnackbar();
+  const { design3DManager, designManager } = useMainContext();
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isFinishOverlayOpen, setIsFinishOverlayOpen] = useState(!isMobile);
   const showCanvasLoader =
@@ -308,6 +313,31 @@ export const Viewer3D = observer(() => {
 
     await rootRef.current.requestFullscreen();
   }, []);
+
+  const handleShare = useCallback(async () => {
+    const shareUrl = buildShareUrl(designManager.getShareConfig());
+
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      enqueueSnackbar('Copied to clipboard', { variant: 'success' });
+      return;
+    } catch {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = shareUrl;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        enqueueSnackbar('Copied to clipboard', { variant: 'success' });
+      } catch {
+        enqueueSnackbar('Unable to copy link', { variant: 'error' });
+      }
+    }
+  }, [designManager, enqueueSnackbar]);
 
   useEffect(() => {
     const onChange = () => {
@@ -362,6 +392,7 @@ export const Viewer3D = observer(() => {
       <CanvasActionsOverlay
         isFullscreen={isFullscreen}
         onDownload={handleDownload}
+        onShare={handleShare}
         onToggleFullscreen={handleToggleFullscreen}
       />
       {showCanvasLoader && (

@@ -1,6 +1,7 @@
 import { makeAutoObservable } from 'mobx';
 
 import { TopShapeItem } from '../types/top';
+import type { SharedConfigV1 } from '../utils/shareConfig';
 import { ConfiguratorStep } from './ConfiguratorStep';
 import { StateManager } from './StateManager';
 
@@ -267,5 +268,78 @@ export class TableDesignManager {
       tableTop: this.selectedTopColor,
       topShape: this.selectedTopShape,
     };
+  }
+
+  getShareConfig(): SharedConfigV1 {
+    return {
+      v: 1,
+      b: this.selectedBaseId,
+      bc: this.selectedBaseColor,
+      cc: this.selectedChairColor,
+      cid: this.selectedChairId,
+      cq: this.chairQuantity,
+      l: this.length,
+      tc: this.selectedTopColor,
+      ts: this.selectedTopShape,
+      w: this.width,
+    };
+  }
+
+  applyShareConfig(config: SharedConfigV1) {
+    try {
+      this._state.dataStore.getBase(config.b);
+      this.setBase(config.b);
+    } catch {
+      // Ignore invalid shared values.
+    }
+
+    const availableBaseColors = this._state.dataStore
+      .getBase(this.selectedBaseId)
+      .colors.map((c) => c.id);
+    if (availableBaseColors.includes(config.bc)) {
+      this.setBaseColor(config.bc);
+    }
+
+    try {
+      this._state.dataStore.getTopShape(config.ts);
+      if (this.isTopShapeSupported(config.ts)) {
+        this.setTopShape(config.ts);
+      }
+    } catch {
+      // Ignore invalid shared values.
+    }
+
+    try {
+      this._state.dataStore.getFinish(config.tc);
+      this.setTopColor(config.tc);
+    } catch {
+      // Ignore invalid shared values.
+    }
+
+    if (Number.isFinite(config.l)) {
+      this.setLength(config.l);
+    }
+
+    if (this.dimensionConstraints.mode === 'rect' && Number.isFinite(config.w)) {
+      this.setWidth(config.w);
+    }
+
+    if (!config.cid) {
+      this.setChairs(null);
+      return;
+    }
+
+    try {
+      const chair = this._state.dataStore.getChair(config.cid);
+      this.setChairs(config.cid);
+      if (config.cc && chair.colors.some((c) => c.id === config.cc)) {
+        this.setChairColor(config.cc);
+      }
+      if (Number.isFinite(config.cq)) {
+        this.setChairQuantity(Math.max(0, Math.floor(config.cq)));
+      }
+    } catch {
+      this.setChairs(null);
+    }
   }
 }
